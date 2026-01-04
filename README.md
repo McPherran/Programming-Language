@@ -3,16 +3,20 @@
 Copyright 2026 McPherran  
 See LICENSE
 
-#### Inspired by F#, C++, C, Rust, Go
+#### Inspired By
+- F#
+- C and C++
+- Go and Rust
+- Shell scripts
+- Google code style
 
-[CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
+Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
 
 ### Language Features
-
 - **Functional-Programming Oriented**
-- **OO Interface Concept but not Traditional OO Syntax**
+- **OO Interfaces but Minimal Traditional OO Syntax**
 - **Function Syntax: Example()**
-- **No Braces for code blocks**
+- **No Braces for Code Blocks**
 - **Memory Safety**
 
 ##### Functions
@@ -34,7 +38,9 @@ See LICENSE
 - Types not merely implied, clear from context.
 
 ##### OO Aspects
+- Interfaces
 - No classes
+- No Inheritance (override by interface spec.)
 - Data oriented
 - Data accessibility syntax
 - Mutability syntax
@@ -48,7 +54,6 @@ See LICENSE
 - Private access flag for functions
 
 ##### Mutability Syntax
-
 - Immutable by default
 - Mutability enable keyword/symbol
 
@@ -57,20 +62,31 @@ See LICENSE
 - Defined by data and/or functions
 - Implementation functions are not members
 
-##### Translation Unit
+##### Code Organization
 - Single file translation units
-- No include files
+- No separate include files, include the source file
+- Exports precompiled to separate output file
+- Include source uses precompiled exports file
+- Directories define namespaces (under project root)
 
 ##### Traditional OO-Like Call Syntax
 - Data acts as object
 - Applies to functions with data as first arg
 - Example function: Trim(string str)
-- Example call: str.Trim
+- Example call: example_str.Trim
 
 ##### No Exceptions (clean, performant)
 - E.g. no throw/catch
 - See Functions (boolean status)
 
+##### No Time-Wasting Debates
+- Compiler disallows tabs
+- Compiler enforces 2 space indentation (and auto-corrects)
+- No capitalization
+- No special syntax needed for categories of variable
+- Line comments allowed, no comments on same line as code
+- Self-documenting code encouraged
+  
 ### Memory Safety
 
 #### Normal Context
