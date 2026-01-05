@@ -14,7 +14,7 @@ Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CS
 
 ### Language Features
 - **Functional-Programming Oriented**
-- **OO Interfaces but Minimal Traditional OO Syntax**
+- **OO: Interfaces, but no classes**
 - **Function Syntax: Example()**
 - **No Braces for Code Blocks**
 - **Memory Safety**
