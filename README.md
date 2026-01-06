@@ -1,4 +1,4 @@
-## The Clay Programming Language
+## The McPherran Programming Language
 
 Copyright 2026 McPherran  
 See LICENSE
