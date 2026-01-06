@@ -82,7 +82,8 @@ Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CS
 ##### No Time-Wasting Debates
 - Compiler disallows tabs
 - Compiler enforces 2 space indentation (and auto-corrects)
-- No special syntax needed for categories of variable
+- Syntax minimizes need for conventions
+- Uppercase characters unsupported except for syntax
 - Line comments allowed, no comments on same line as code
 - Self-documenting code encouraged
   
