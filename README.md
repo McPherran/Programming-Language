@@ -20,7 +20,7 @@ Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CS
 - **Memory Safety**
 
 ##### Functions
-- Pattern matchhing
+- Pattern matching
 - Imperative statements supported
 - No return statements
 - Pattern match or value as last statement is return value
@@ -28,7 +28,6 @@ Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CS
 - Value of function uses struct member access syntax
 - Boolean status optionally associated with function
 - Syntax to access status and value
-- General minimization of declaration of variables
 - Parentheses unused for functions without params
 
 ##### General Minimization of Declaration of Variables
