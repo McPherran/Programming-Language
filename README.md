@@ -72,7 +72,7 @@ Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CS
 - Data acts as object
 - Applies to functions with data as first arg
 - Example function: Trim(string str)
-- Example call: example_str.Trim
+- Example call: line.Trim
 
 ##### No Exceptions (clean, performant)
 - E.g. no throw/catch
