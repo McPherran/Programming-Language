@@ -10,7 +10,9 @@ See LICENSE
 - Shell scripts
 - Google code style
 
-Also: [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
+See Also:
+- [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
+- [F# native compiler initiative](https://github.com/FidelityFramework/Firefly)
 
 ### Language Features
 - **Functional-Programming Oriented**
