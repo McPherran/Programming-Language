@@ -36,6 +36,7 @@ See Also:
 - Function call syntax provides effective return value variable
 - Return value is either primitive or struct
 - Explicit declaration of variables is generally unnecessary
+- Automatic sequence variables (loop, span, list, hash, array, ...)
 - Types not merely implied, clear from context.
 
 ##### OO Aspects
@@ -80,7 +81,7 @@ See Also:
 - E.g. no throw/catch
 - See Functions (boolean status)
 
-##### No Time-Wasting Debates
+##### Reduce Unproductive Debates
 - Compiler disallows tabs
 - Compiler enforces 2 space indentation (and auto-corrects)
 - Syntax minimizes need for conventions
@@ -97,6 +98,13 @@ See Also:
 - No garbage collection
 - Memory managed as part of language
 - Unsafe contexts allowed
+
+#### Why No Garbage Collection (GC)
+- Manage memory once at compile-time, not repeatedly at run-time.
+- GC indulges haphazard coding; AI-incompatible
+- GC negatively impacts performance and determinism
+- GC unnecessary (e.g. Rust).
+- Note: GC works well; Simply stating that it's suboptimal/deprecated.
 
 #### Unsafe Context
 - No pointers
