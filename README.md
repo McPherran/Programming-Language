@@ -104,7 +104,7 @@ See Also:
 - GC indulges haphazard coding; AI-incompatible
 - GC negatively impacts performance and determinism
 - GC unnecessary (e.g. Rust).
-- Note: GC works well; Simply stating that it's suboptimal/deprecated.
+- Note: GC works well and adds memory safety, but it's deprecated.
 
 #### Unsafe Context
 - No pointers
