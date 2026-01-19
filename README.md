@@ -1,4 +1,4 @@
-## The McPherran Programming Language
+## McPherran: New Memory Safe Programming Language
 
 Copyright 2026 McPherran  
 See LICENSE
