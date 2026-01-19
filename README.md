@@ -17,9 +17,10 @@ See Also:
 ### Language Features
 - **Functional-Programming Oriented**
 - **OO: Interfaces, but no classes**
-- **Function Syntax: Example()**
+- **Standard Function Syntax: Example()**
 - **No Braces for Code Blocks**
 - **Memory Safety**
+- **Syntax Fosters AI/Scanning**
 
 ##### Functions
 - Pattern matching
@@ -81,7 +82,17 @@ See Also:
 - E.g. no throw/catch
 - See Functions (boolean status)
 
+##### Reduce Unproductive Decisions (Code Clarity, AI)
+- No referring to "operator precedence" 
+- Parentheses required when needed, disallowed when not
+- Syntax provides clarity when parentheses disallowed/unnecessary
+- Prevent confusing math equations and boolean logic
+- Functional approach to math/logic/operators
+- FP approach not less concise, rather far more concise overall...
+- FP and data approach fosters pattern recognition/capture.
+  
 ##### Reduce Unproductive Debates
+- No "when are parens needed/better" debates
 - Compiler disallows tabs
 - Compiler enforces 2 space indentation (and auto-corrects)
 - Syntax minimizes need for conventions
@@ -100,7 +111,7 @@ See Also:
 - Unsafe contexts allowed
 
 #### Why No Garbage Collection (GC)
-- Manage memory once at compile-time, not repeatedly at run-time.
+- Manage memory safety once at compile-time, not repeatedly at run-time.
 - GC indulges haphazard coding; AI-incompatible
 - GC negatively impacts performance and determinism
 - GC unnecessary (e.g. Rust).
