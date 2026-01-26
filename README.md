@@ -93,8 +93,8 @@ See Also:
   
 ##### Reduce Unproductive Debates
 - No "when are parens needed/better" debates
-- Compiler disallows tabs
-- Compiler enforces 2 space indentation (and auto-corrects)
+- Indentation uses tabs. Tab size of 2 spaces recommended.
+- Integrated editor (see IDE plan below) enforces tabs of size 2 or 4.
 - Syntax minimizes need for conventions
 - Uppercase characters unsupported except for syntax
 - Line comments allowed, no comments on same line as code
@@ -122,3 +122,7 @@ See Also:
 - Addresses and ranges (arrays, bounds)
 - Memory-mapped structs (e.g. for drivers)
 
+## Development Plan
+- Support for the new language to be in Visual Studio extension project.
+- Available on Visual Studio Marketplace.
+- Link to be provided. Stay tuned for updates at this repository.
