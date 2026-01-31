@@ -36,6 +36,8 @@ See Also:
 - **No Braces for Code Blocks**
 - **Memory Safety**
 - **Syntax Fosters AI/Scanning**
+- **High Performance**
+- **Power Efficiency**
 
 ##### Functions
 - Pattern matching
