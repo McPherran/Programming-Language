@@ -5,10 +5,10 @@ See LICENSE
 
 ## Memory Management: Entry/Exit Design
 
-### All software operations are parititioned as a memory-aware box.
-### The memory-aware box, has an Entry/Exit stage (analogous to In/Out)
-### Memory is acquired at the box Entry and it is released at the box Exit
-### The Entry/Exit is the only place where memory is acquired/released
+### Software operations are partitioned as Memory IO boxes.
+### A Memory IO box has an Entry/Exit stage (analogous to In/Out)
+### Memory is Acquired at the box Entry and Released at the box Exit
+### Memory Acquisition/Release occurs only at box Entry/Exit
 ### Compiler-controlled
 ### Mode: Acquisition/Release may be alloc/free or pool get/return
 ### Attributes control mode and pool sizes
