@@ -13,6 +13,7 @@ See LICENSE
 ### Mode: Acquisition/Release may be alloc/free or pool get/return
 ### Attributes control mode and pool sizes
 ### Memory management is part of the application design
+### No garbage collection (GC)
 ### Boxes can contain smaller boxes with the same paradigm
 ### Async operations supported, box memory generally thread-local
 ### Fast compilation, high-performance runtime, deterministic
