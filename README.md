@@ -1,12 +1,26 @@
-## McPherran: New Memory Safe Programming Language
+# McPherran: New Memory Safe Programming Language
 
 Copyright 2026 McPherran  
 See LICENSE
 
+## Memory Management: Entry/Exit Design
+
+### All software operations are parititioned as a memory-aware box.
+### The memory-aware box, has an Entry/Exit stage (analogous to In/Out)
+### Memory is acquired at the box Entry and it is released at the box Exit
+### The Entry/Exit is the only place where memory is acquired/released
+### Compiler-controlled
+### Mode: Acquisition/Release may be alloc/free or pool get/return
+### Attributes control mode and pool sizes
+### Memory management is part of the application design
+### Boxes can contain smaller boxes with the same paradigm
+### Async operations supported, box memory generally thread-local
+### Fast compilation, high-performance runtime, deterministic
+
 #### Inspired By
-- F#
-- C and C++
 - Go and Rust
+- C and C++
+- F#
 - Shell scripts
 - Google code style
 
