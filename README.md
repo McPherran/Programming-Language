@@ -38,6 +38,7 @@ See Also:
 - **Syntax Fosters AI/Scanning**
 - **High Performance**
 - **Power Efficiency**
+- **Simple Interoperability with C Libraries (FFI)**
 
 ##### Functions
 - Pattern matching
