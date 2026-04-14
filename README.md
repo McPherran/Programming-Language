@@ -139,7 +139,3 @@ See Also:
 - No pointers
 - Addresses and ranges (arrays, bounds)
 - Memory-mapped structs (e.g. for drivers)
-
-## Development Plan
-- Support for the new language to be provided by an IDE/editor extension.
-- Link to be provided. Stay tuned for updates at this repository.
