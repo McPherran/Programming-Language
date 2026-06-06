@@ -1,0 +1,65 @@
+#!/bin/sh
+## Copyright 2026 McPherran
+
+LIBC_INC_DIR=/usr/include/x86_64-linux-musl
+LIBC_DIR=/usr/lib/x86_64-linux-musl
+
+## -------------------------------------------------------------------------------------------------
+## ASM
+## -------------------------------------------------------------------------------------------------
+
+## GNU as
+# as -msyntax=intel -mmnemonic=intel -mnaked-reg main.s -o main.o
+
+## NASM
+# ASM_ARGS="-f elf64"
+# nasm $ASM_ARGS main.asm
+# nasm $ASM_ARGS text.asm
+
+## Linker command:
+# mold -m elf_x86_64 -static -o ide main.o text.o $LIBC_DIR/crt1.o -L $LIBC_DIR -lc
+
+## -------------------------------------------------------------------------------------------------
+## CC
+## -------------------------------------------------------------------------------------------------
+
+## gcc params:
+
+## C Standard: -std=<std>
+## 		gcc-15: -std=c23 is default, -std=gnu23 enables gnu extensions.
+
+## -B <dir>						Add directory <dir> to search paths
+
+## Optimization: -O<ctrl>
+## By default (with no -O<ctrl> param), most optimizations are disabled.
+##		-Og for debug, -O for performant compilation, -O2 is standard
+
+# CC_CMD="cc -c"
+# CC_INC=""
+# CC_SRC=""
+
+## cc -O -march=x86-64-v4 -nostdinc -isystem $LIBC_DIR/include -B$LIBC_DIR -fuse-ld=mold Main.c -o ide
+# cc -c -O -march=x86-64-v4 -nostdinc -isystem $LIBC_INC_DIR main.c
+
+PROJ_DIR=bld
+SRC_DIR=src/$PROJ_DIR
+BUILD_DIR=.build/$PROJ_DIR
+mkdir -p $BUILD_DIR
+
+compile()
+{
+	cc -c -O -march=x86-64-v4 -nostdinc -isystem $LIBC_INC_DIR $SRC_DIR/$1.c -o $BUILD_DIR/$1.o
+}
+
+## Link options:
+## -static			Disable linking with shared libraries
+## -pthread			Link with POSIX threads library.
+
+link()
+{
+	mold -m elf_x86_64 -static $LIBC_DIR/crt1.o -L $LIBC_DIR -lc $BUILD_DIR/$1.o -o $BUILD_DIR/ide
+}
+
+compile main
+link main
+

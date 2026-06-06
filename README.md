@@ -3,6 +3,32 @@
 Copyright 2026 McPherran  
 See LICENSE
 
+---
+
+## Current Develop Plan
+
+### Initial development in C (Linux, cc 15.2)
+
+### Build Tool
+- Initially for C and eliminating necessity of explicit include files
+
+### Code/Text Editor
+
+### Compiler
+1. Compile optimal (commonly used) subset of C
+2. Compile new language
+3. Migration from C tool.
+
+---
+
+# Language Design Ideas
+
+## C - Like
+
+### Tooling supports simple and automated migration from C.
+
+---
+
 ## Memory Management: Entry/Exit Design
 
 ### Software operations are partitioned as Memory IO boxes.
@@ -108,7 +134,7 @@ See Also:
 - Functional approach to math/logic/operators
 - FP approach not less concise, rather far more concise overall...
 - FP and data approach fosters pattern recognition/capture.
-  
+
 ##### Reduce Unproductive Debates
 - No "when are parens needed/better" debates
 - Indentation uses tabs. Tab size of 2 spaces recommended.
@@ -117,7 +143,7 @@ See Also:
 - Uppercase characters unsupported except for syntax
 - Line comments allowed, no comments on same line as code
 - Self-documenting code encouraged
-  
+
 ### Memory Safety
 
 #### Normal Context
