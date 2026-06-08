@@ -39,46 +39,6 @@ https://github.com/McPherran/Programming-Language/edit/main/LICENSE
 
 ### Details
 
-#### Memory Safety
-
-##### Memory Management: Entry/Exit Design
-
-- **Software operations are partitioned as Memory IO boxes.**
-- **A Memory IO box has an Entry/Exit stage (analogous to In/Out)**
-- **Memory is Acquired at the box Entry and Released at the box Exit**
-- **Memory Acquisition/Release occurs only at box Entry/Exit**
-- **Mode: Acquisition/Release may be alloc/free or pool get/return**
-- **Attributes control mode and pool sizes**
-- **Memory management is part of the application design**
-- **No garbage collection (GC)**
-- **Boxes can contain smaller boxes with the same paradigm**
-- **Async operations supported, box memory generally thread-local**
-- **Fast compilation, high-performance runtime, deterministic**
-
-##### Normal Context
-- No global variables (local and module-level only)
-- No pointers
-- No allocations
-- No garbage collection
-- Memory managed as part of language
-- Unsafe contexts allowed
-
-##### Unsafe Context
-- No pointers
-- Addresses and ranges (arrays, bounds)
-- Memory-mapped structs (e.g. for drivers)
-
-##### Why No Garbage Collection (GC)
-- Manage memory safety once at compile-time, not repeatedly at run-time.
-- GC indulges haphazard coding; Reduces AI-compatibility
-- GC negatively impacts performance and determinism
-- GC unnecessary (e.g. Rust).
-- Note: GC works well and adds memory safety, but it's deprecated.
-
-See Also:
-- [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
-- [F# native compiler initiative](https://github.com/FidelityFramework/Firefly)
-
 #### OO Aspects
 - https://github.com/McPherran/Programming-Language/blob/main/Classes.md
 - Functional OO (foo-oriented): Extension classes
@@ -116,20 +76,59 @@ See Also:
 #### No Exceptions (clean, performant)
 - E.g. no throw/catch
 - See Functions (boolean status)
+  
+#### Memory Safety
 
-#### Reduce Unproductive Decisions (Code Clarity, AI)
+- Memory Management: Entry/Exit Design
+  - Software operations are partitioned as Memory IO boxes.
+  - A Memory IO box has an Entry/Exit stage (analogous to In/Out)
+  - Memory is Acquired at the box Entry and Released at the box Exit
+  - Memory Acquisition/Release occurs only at box Entry/Exit
+  - Mode: Acquisition/Release may be alloc/free or pool get/return
+  - Attributes control mode and pool sizes
+  - Memory management is part of the application design
+  - No garbage collection (GC)
+  - Boxes can contain smaller boxes with the same paradigm
+  - Async operations supported, box memory generally thread-local
+  - Fast compilation, high-performance runtime, deterministic
+
+- Normal Context
+  - No global variables (local and module-level only)
+  - No pointers
+  - No allocations
+  - No garbage collection
+  - Memory managed as part of language
+  - Unsafe contexts allowed
+
+- Unsafe Context
+  - No pointers
+  - Addresses and ranges (arrays, bounds)
+  - Memory-mapped structs (e.g. for drivers)
+
+- Why No Garbage Collection (GC)
+  - Manage memory safety once at compile-time, not repeatedly at run-time
+  - GC indulges haphazard coding; Reduces AI-compatibility
+  - GC negatively impacts performance and determinism
+  - GC unnecessary (e.g. Rust)
+  - GC works for memory safety, but it's deprecated
+
+- See Also:
+  - [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
+  - [F# native compiler initiative](https://github.com/FidelityFramework/Firefly)
+
+#### Reduce Unproductive Decision-Making (Code Clarity, AI)
 - No referring to "operator precedence" 
 - Parentheses required when needed, disallowed when not
 - Syntax provides clarity when parentheses disallowed/unnecessary
 - Prevent confusing math equations and boolean logic
 - Functional approach to math/logic/operators
-- FP/OO (foo) and data approach fosters pattern recognition/capture.
+- FP/OO (foo) approach fosters data pattern recognition
 
 #### Reduce Unproductive Debates
 - Syntax minimizes need for conventions
 - No "when are parens needed/better" debates
 - Indentation uses tabs. Tab size of 2 spaces recommended.
-- Integrated editor enforces tabs of size 2 or 4.
+- Builder enforces tabs of size 2 or 4.
 - Most syntax lowercase only
 - Line comments allowed, no comments on same line as code
 - Self-documenting code is standard/convention
