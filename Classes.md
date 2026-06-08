@@ -1,4 +1,6 @@
 # mach - Extension Classes
+Copyright 2026 McPherran  
+[License](https://github.com/McPherran/Programming-Language/edit/main/LICENSE)
 
 C++ class syntax is replaced by "class <type>" where type is the type (e.g.
 data/struct) that is used as the type of the first arg for all member functions.
