@@ -1,20 +1,25 @@
-# New Memory Safe Programming Language
-
+# New Memory Safe Programming Language (code name mach)
 Copyright 2026 McPherran  
 See LICENSE
 
 ---
 
-## Current Develop Plan
+## Language Design Overview
+  - Type: C++-like
+  - Supports automated imports -replaces C++20 modules
+  - Language Code Name: mach
 
-### Initial development in C (Linux, cc 15.2)
+## Current Development Plan
 
-### Build Tool
-- Initially for C and eliminating necessity of explicit include files
+### Initial development in C++17 (Linux, gcc 15.2)
+
+### Builder
+- Builds C++17 and eliminates use of explicit include files
+- Builds and translates mach (new C++-like programming
 
 ### Code/Text Editor
 
-### Compiler
+### 
 1. Compile optimal (commonly used) subset of C
 2. Compile new language
 3. Migration from C tool.
@@ -23,9 +28,14 @@ See LICENSE
 
 # Language Design Ideas
 
-## C - Like
+## Inspired By
+- C and C++
+- Go and Rust
+- F#
+- Shell scripts
+- Google code style
 
-### Tooling supports simple and automated migration from C.
+## C++-Like
 
 ---
 
@@ -44,12 +54,6 @@ See LICENSE
 ### Async operations supported, box memory generally thread-local
 ### Fast compilation, high-performance runtime, deterministic
 
-#### Inspired By
-- Go and Rust
-- C and C++
-- F#
-- Shell scripts
-- Google code style
 
 See Also:
 - [CISA - Memory Safety](https://www.cisa.gov/sites/default/files/2023-12/CSAC_TAC_Recommendations-Memory-Safety_Final_20231205_508.pdf)
@@ -57,14 +61,13 @@ See Also:
 
 ### Language Features
 - **Functional-Programming Oriented**
-- **OO: Interfaces, but no classes**
+- **OO: Extension classes**
 - **Standard Function Syntax: Example()**
-- **No Braces for Code Blocks**
 - **Memory Safety**
 - **Syntax Fosters AI/Scanning**
 - **High Performance**
 - **Power Efficiency**
-- **Simple Interoperability with C Libraries (FFI)**
+- **System V AMD64 ABI (C-ABI)**
 
 ##### Functions
 - Pattern matching
@@ -86,8 +89,8 @@ See Also:
 
 ##### OO Aspects
 - Interfaces
-- No classes
-- No Inheritance (override by interface spec.)
+- Extension classes
+- Non-Inheritance Overrides
 - Data oriented
 - Data accessibility syntax
 - Mutability syntax
