@@ -2,7 +2,7 @@
 ## Code Name: mach
 
 Copyright 2026 McPherran  
-See LICENSE
+See LICENSE  
 https://github.com/McPherran/Programming-Language/edit/main/LICENSE
 
 ---
