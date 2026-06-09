@@ -1,5 +1,5 @@
 # Memory Safe Programming Language
-## Code Name: mach
+## Code Name: ccn
 
 Copyright 2026 McPherran  
 [License](https://github.com/McPherran/Programming-Language/edit/main/LICENSE)
@@ -9,14 +9,19 @@ Copyright 2026 McPherran
 ## Language Overview
 
 - **Type: C++-like**
-- **Language code name: mach**
-- **File extension: mc (e.g. main.mc)**
+- **Language code name: ccn**
+- **File extension: cn (e.g. main.cn)**
 - **Inspired By**
   - C and C++
   - Go and Rust
   - F#
   - Shell
   - Google code style
+
+#### Origin of Name "ccn"
+
+"ccn" is an acronym for Comp Code Net. "ccn" is general name that was used for the http server software and concept of software delivery via the internet. Serendipitously, "ccn" can also apply to C-related languages, e.g. "cc" is often associated with C compilation. Language name ideas for a permanent name are welcomed.  
+[Language Name](https://github.com/McPherran/Programming-Language/discussions/2)
 
 ---
 
@@ -134,11 +139,12 @@ Copyright 2026 McPherran
 
 ## Development Plan
 
-### Initial development in C++17 using Linux
+### Initial development in C++ using Linux
 
 ### Builder
-- Builds C++17 and eliminates explicit #include syntax
-- Builds and translates mach
+- Builds C++. Eliminates explicit #include/import syntax
+- Source files and references (imports/#includes) are automated and mapped
+- Builds and translates ccn 
 - Translation Units are hierarchy-based as opposed to file-based
 
 ### Code/Text Editor
