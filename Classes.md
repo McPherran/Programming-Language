@@ -1,4 +1,4 @@
-# mach - Extension Classes
+# ccn - Extension Classes
 Copyright 2026 McPherran  
 [License](https://github.com/McPherran/Programming-Language/edit/main/LICENSE)
 
@@ -22,7 +22,7 @@ is a form of extension methods (partial classes). Example:
 		}
 	}
 
-## mach
+## ccn
 
 	struct example_type
 	{
