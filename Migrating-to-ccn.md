@@ -4,8 +4,12 @@ Copyright 2026 McPherran
 ### General
 ccn is designed for migration from both C and C++. However, migration
 from other languages is certainly possible and the simplicity of migration
-would vary with the lanaguage under migration. E.g. Go, Rust, and C#, may
+would vary with the lanaguage under migration. E.g. C#, Go, and Rust may
 be relatively easy to migrate from.
+
+### IMPORTANT
+
+ccn is actively developed but not yet available. 
 
 ### Classes
 See https://github.com/McPherran/Programming-Language/blob/main/Classes.md
