@@ -1,61 +1,36 @@
 # Memory Safe Programming Language
-## Code Name: ccn
 
 Copyright 2026 McPherran  
 [License](https://github.com/McPherran/Programming-Language/edit/main/LICENSE)
 
 ---
 
-## Language Overview
-
-- **Type: C++-like**
-- **Language code name: ccn**
-- **File extension: cn (e.g. main.cn)**
-- **Inspired By**
-  - C and C++
-  - Go and Rust
-  - F#
-  - Shell
-  - Google code style
-
-#### Origin of Name "ccn"
-
-"ccn" is an acronym for Comp Code Net. "ccn" is general name that was used for the http server software and concept of software delivery via the internet. Serendipitously, "ccn" can also apply to C-related languages, e.g. "cc" is often associated with C compilation. Language name ideas for a permanent name are welcomed.  
-[Language Name](https://github.com/McPherran/Programming-Language/discussions/2)
-
----
-
 ## Language Design/Concepts
 
----
-
 ### Language Features
-- **Functional-OO (foo-oriented)**
-- **OO: Extension classes**
-- **Standard Function Syntax: Example()**
+
+#### All functions are single operand operations. 
+#### The single arg to an operation may be a data set.
+
+- **Function and pipeline oriented**
+- **Traditional OO-classes unused (represented by operational pipeline)**
 - **Automated imports** (no #include/import syntax)
-- **Eases migration from both C and C++**
+- **Namespaces are based on directories**
 - **Memory Safety**
 - **Syntax Fosters AI/Scanning**
 - **High Performance**
 - **Power Efficiency**
-- **System V AMD64 ABI (Unix/Linux C-ABI)** (initial ABI)
+- **System V AMD64 ABI (Unix/Linux C-ABI)**
 
 ### Details
 
-#### OO Aspects
-- https://github.com/McPherran/Programming-Language/blob/main/Classes.md
-- Functional OO (foo-oriented): Extension classes
-- Data acts as object
-- Traditional OO Call Syntax
-- Interfaces
-- Non-Inheritance Overrides
-- Data oriented
-- Data accessibility syntax
+#### Data Management
 - Mutability syntax
 - No properties (unneeded)
   
-#### Functions
+#### Functional OO
+- **Functions are single-operand operations**
+- **Single operand may be a complex data set.**
 - Pattern matching
 - Imperative statements supported
 - No return statements
@@ -63,8 +38,7 @@ Copyright 2026 McPherran
 - Function call acts as data/value
 - Value of function uses struct member access syntax
 - Boolean status optionally associated with function
-- Syntax to access status and value
-- Parentheses unused for functions without params
+- Parentheses unused for functions without an arg
 
 #### General Minimization of Declaration of Variables
 - Function call syntax provides effective return value variable
@@ -137,14 +111,16 @@ Copyright 2026 McPherran
 - Line comments allowed, no comments on same line as code
 - Self-documenting code is standard/convention
 
+---
+
 ## Development Plan
 
-### Initial development in C++ using Linux
+### Initial development in C using Linux
 
 ### Builder
-- Builds C++. Eliminates explicit #include/import syntax
+- Builds C. Eliminates explicit #include/import syntax
 - Source files and references (imports/#includes) are automated and mapped
-- Builds and translates ccn 
+- Builds and translates new language
 - Translation Units are hierarchy-based as opposed to file-based
 
 ### Code/Text Editor
