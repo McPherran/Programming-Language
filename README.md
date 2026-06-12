@@ -9,9 +9,6 @@ Copyright 2026 McPherran
 
 ### Language Features
 
-#### All functions are single operand operations. 
-#### The single arg to an operation may be a data set.
-
 - **Function and pipeline oriented**
 - **Traditional OO-classes unused (represented by operational pipeline)**
 - **Automated imports** (no #include/import syntax)
@@ -25,14 +22,16 @@ Copyright 2026 McPherran
 ### Details
 
 #### Data Management
-- Mutability syntax
+- Mutability syntax (TBD)
 - No properties (unneeded)
   
-#### Functional OO
-- **Functions are single-operand operations**
-- **Single operand may be a complex data set.**
+#### Operational (Functional) Pipeline
+
+- **All functions are unary or binary operations**
+- **The arg(s) to an operation may be a data set**
+- Operations are named functions and symbolic operators, e.g. +, -, *, ...
 - Pattern matching
-- Imperative statements supported
+- Imperative statements supported (TBD)
 - No return statements
 - Pattern match or value as last statement is return value
 - Function call acts as data/value
